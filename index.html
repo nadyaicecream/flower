@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090d">
+  <meta name="description" content="A little love, made of glowing particles.">
+  <title>I LOVE YOU ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene" id="scene">
+    <canvas id="particles" aria-label="Animasi partikel hati"></canvas>
+    <div class="ambient ambient-red"></div><div class="ambient ambient-mint"></div>
+    <header class="topline"><span class="dot"></span> A LITTLE MESSAGE FOR YOU <span class="dot"></span></header>
+    <section class="center">
+      <p class="overline" id="overline">MADE OF A MILLION LITTLE MOMENTS</p>
+      <h1 id="mainTitle">I LOVE YOU</h1>
+      <p class="subtitle" id="subtitle">in every universe, I'd find you again ♡</p>
+      <div class="controls">
+        <button id="heartMode" class="primary" type="button">♡ Send a heart</button>
+        <button id="wordMode" type="button">✦ Form the words</button>
+      </div>
+      <p id="hint" class="hint">Tap anywhere to make the stars bloom</p>
+    </section>
+    <aside class="photo-card" id="photoCard" hidden>
+      <button class="remove-photo" id="removePhoto" type="button" aria-label="Hapus foto">×</button>
+      <img id="chosenPhoto" alt="Foto pilihan">
+      <span>our little memory ♡</span>
+    </aside>
+    <label class="photo-add" for="photoInput">＋ Add your photo</label>
+    <input id="photoInput" type="file" accept="image/*" hidden>
+    <div class="music-widget">
+      <button id="musicToggle" type="button" aria-label="Putar musik">♫</button>
+      <div><strong id="musicLabel">ROMANTIC AMBIENCE</strong><small id="musicStatus">Music off · tap to play</small></div>
+      <span class="equalizer" id="equalizer"><i></i><i></i><i></i><i></i></span>
+    </div>
+    <footer>CRAFTED WITH <span>♥</span> FOR SOMEONE SPECIAL</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
